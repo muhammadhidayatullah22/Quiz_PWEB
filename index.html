@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menampilkan Gambar</title>
+</head>
+
+<body id="bg"> 
+    <div style="padding: 2%"> 
+        <h1 style="margin-left: 2%;">Kuis 1</h1> 
+        <p style="margin-left: 2%;">Nama : Muhammad Hidayatullah</p> 
+        <p style="margin-left: 2%;">NIM : 12250112899</p> 
+    </div> 
+ 
+    <div class="container"> 
+        <div class="img-container"> 
+            <img src="img/bsport.jpg" alt="Gambar 1"> 
+            <p style="text-align: center;">chiron</p> 
+            <button type="button" class="btn btn-secondary" onclick="ubahWarna1()">Change</button> 
+        </div> 
+        <div class="img-container"> 
+            <img src="img/bsport2.jpg" alt="Gambar 2"> 
+            <p style="text-align: center;">divo</p> 
+            <button type="button" class="btn btn-secondary" onclick="ubahWarna2()">Change</button> 
+        </div> 
+        <div class="img-container"> 
+            <img src="img/bdivo2.jpeg" alt="Gambar 3"> 
+            <p style="text-align: center;">chiron sport</p> 
+            <button type="button" class="btn btn-secondary" onclick="ubahWarna3()">Change</button> 
+        </div> 
+    </div> 
+ 
+    <script> 
+        function ubahWarna1() { 
+            document.getElementById("bg").style.backgroundColor = "#000080","#add8e6"; 
+        } 
+ 
+        function ubahWarna2() { 
+            document.getElementById("bg").style.backgroundColor = "#add8e6"; 
+        } 
+ 
+        function ubahWarna3() { 
+            document.getElementById("bg").style.backgroundColor = "#000000"; 
+        } 
+    </script> 
+ 
+    <style> 
+        img { 
+            width: 100%; 
+            height: auto; 
+        } 
+ 
+        .container { 
+            display: flex; 
+            padding: 10px;
+            justify-content: space-between; 
+            align-items: center; 
+            flex-wrap: wrap; 
+        } 
+ 
+        .img-container { 
+            flex-basis: 30%; 
+            margin-bottom: 10px; 
+        } 
+    </style> 
+</body> 
+</html>
